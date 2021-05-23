@@ -11,11 +11,15 @@ def game_core_v2(number):
         if number < b1_middle:
             b_end = b1_middle
             b1_middle = ((b_end - a_start)//2)+a_start
+            # print(b1_middle)
         elif number > b1_middle:
             a_start = b1_middle
             b1_middle = ((b_end - a_start)//2) + a_start
+            # print(b1_middle)
+    # print (count)
     return(count)   # выход из цикла, если угадали
 
+# game_core_v2(67)
 
 def score_game(game_core):
     count_ls = []
